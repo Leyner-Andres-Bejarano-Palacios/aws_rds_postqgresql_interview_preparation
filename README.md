@@ -130,3 +130,101 @@ By using dual-stack mode in RDS, resources can communicate with a DB instance ov
 <details><summary><b>Source</b></summary>
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.DualStackMode.html#Concepts.RDS_Fea_Regions_DB-eng.Feature.DualStackMode.pg
 </details>
+
+### Theorical Question 9
+
+Do you know what the performance insights are and where to find them is ?
+
+
+<details><summary><b>Answer</b></summary>
+
+Performance Insights in Amazon RDS expands on existing Amazon RDS monitoring features to illustrate and help you analyze your database performance. With the Performance Insights dashboard, you can visualize the database load on your Amazon RDS DB instance. You can also filter the load by waits, SQL statements, hosts, or users
+
+In the picture below click where it say session
+
+![Image](img/performanceInsights.png "performance Insights")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.DualStackMode.html#Concepts.RDS_Fea_Regions_DB-eng.Feature.DualStackMode.pg
+</details>
+
+### Theorical Question 10
+
+what is the DB instance RAM recommendations ?
+
+
+<details><summary><b>Answer</b></summary>
+
+An Amazon RDS performance best practice is to allocate enough RAM so that your working set resides almost completely in memory. The working set is the data and indexes that are frequently in use on your instance. The more you use the DB instance, the more the working set will grow.
+
+To tell if your working set is almost all in memory, check the ReadIOPS metric (using Amazon CloudWatch) while the DB instance is under load. The value of ReadIOPS should be small and stable. In some cases, scaling up the DB instance class to a class with more RAM results in a dramatic drop in ReadIOPS. In these cases, your working set was not almost completely in memory. Continue to scale up until ReadIOPS no longer drops dramatically after a scaling operation, or ReadIOPS is reduced to a very small amount.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html
+</details>
+
+### Theorical Question 11
+
+Do you know what the vacuum command is for in posgresql ?
+
+
+<details><summary><b>Answer</b></summary>
+
+VACUUM reclaims storage occupied by dead tuples. In normal PostgreSQL operation, tuples that are deleted or obsoleted by an update are not physically removed from their table; they remain present until a VACUUM is done. Therefore it's necessary to do VACUUM periodically, especially on frequently-updated tables.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/sql-vacuum.html
+</details>
+
+
+### Theorical Question 12
+
+Do you know what the analize command is for in posgresql ?
+
+
+<details><summary><b>Answer</b></summary>
+
+ANALYZE collects statistics about the contents of tables in the database, and stores the results in the pg_statistic system catalog. Subsequently, the query planner uses these statistics to help determine the most efficient execution plans for queries.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/sql-analyze.html
+</details>
+
+
+### Theorical Question 13
+
+Do you know what types of scans can you see in the explain command in posgresql ?
+
+
+<details><summary><b>Answer</b></summary>
+
+ sequential scans, index scans, and bitmap index scans. There are also non-table row sources, such as VALUES clauses and set-returning functions in FROM, which have their own scan node types. If the query requires joining, aggregation, sorting, or other operations on the raw rows, then there will be additional nodes above the scan nodes to perform these operations.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/sql-analyze.html
+</details>
+
+### Theorical Question 14
+
+How can you optimize postgreql in aws rds ?
+
+
+<details><summary><b>Answer</b></summary>
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.PostgreSQL
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.PostgreSQL
+</details>
