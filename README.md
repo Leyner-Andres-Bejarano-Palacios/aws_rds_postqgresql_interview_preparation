@@ -228,3 +228,80 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#C
 <details><summary><b>Source</b></summary>
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.PostgreSQL
 </details>
+
+### Theorical Question 15
+
+How would you filter a query with aggregate ?
+
+
+<details><summary><b>Answer</b></summary>
+
+The fundamental difference between WHERE and HAVING is this: WHERE selects input rows before groups and aggregates are computed (thus, it controls which rows go into the aggregate computation), whereas HAVING selects group rows after groups and aggregates are computed. Thus, the WHERE clause must not contain aggregate functions; it makes no sense to try to use an aggregate to determine which rows will be inputs to the aggregates. On the other hand, the HAVING clause always contains aggregate functions. 
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+
+
+### Theorical Question 16
+
+How do you know by the cli in postgresql that you are seeing a superuser ?
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/superUserCli.png "super UserCli")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 17
+
+Casting is pretty similar to how we do it in snowflake
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/castingInPostgresql.png "casting In Postgresql")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 18
+
+What is filter for in postgresql
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/filterPosgresql.png "filter Posgresql")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 19
+
+What are generated columns in posqgresql
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/generatedColumns.png "generated Columns")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
