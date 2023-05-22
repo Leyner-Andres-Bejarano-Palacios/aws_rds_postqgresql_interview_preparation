@@ -305,3 +305,93 @@ What are generated columns in posqgresql
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/current/tutorial-agg.html
 </details>
+
+### Theorical Question 20
+
+The primary key section is essential
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/primaryKeySection.png "primary Key Section")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+
+### Theorical Question 21
+
+Do you know what cascade is for in postgresql
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/cascade.png "cascade")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 22
+
+In postgresql is not necessary to have an authorized view for doing row level security, it has a feature for granting permission in a per row basis
+
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/rowSecurity.png "rowSecurity")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 23
+
+When do we need a partition in postgresql and when a sequential scan is better than an index
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/partition_part1.png "partition_part1")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 24
+
+Well we can have an index per partition and is also important to enable prunning
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/partition_part2.png "partition_part2")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 25
+
+Great example of using the explain command for optimizing partitions
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/explaningWithExplain.png "explaningWithExplain")
+
+![Image](img/explaining_with_explain_part2.png "explaining_with_explain_part2")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
