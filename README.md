@@ -395,3 +395,47 @@ Great example of using the explain command for optimizing partitions
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/current/tutorial-agg.html
 </details>
+
+### Theorical Question 26
+
+are cte evaluated only once per execution in postgresql ?
+
+<details><summary><b>Answer</b></summary>
+
+A useful property of WITH queries is that they are normally evaluated only once per execution of the parent query, even if they are referred to more than once by the parent query or sibling WITH queries. Thus, expensive calculations that are needed in multiple places can be placed within a WITH query to avoid redundant work.
+
+![Image](img/snowflakeMaterializeQuery.png "snowflakeMaterializeQuery")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/current/tutorial-agg.html
+</details>
+
+### Theorical Question 27
+
+how do you control The fractional precision of a monetary daata type ?
+
+<details><summary><b>Answer</b></summary>
+
+The fractional precision is determined by the database's lc_monetary setting.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/datatype-money.html
+</details>
+
+### Theorical Question 28
+
+the character Tip  of posgresql
+
+<details><summary><b>Answer</b></summary>
+
+There is no performance difference among these three types, apart from increased storage space when using the blank-padded type, and a few extra CPU cycles to check the length when storing into a length-constrained column. While character(n) has performance advantages in some other database systems, there is no such advantage in PostgreSQL; in fact character(n) is usually the slowest of the three because of its additional storage costs. In most situations text or character varying should be used instead.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/datatype-character.html
+</details>
