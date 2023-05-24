@@ -530,3 +530,19 @@ https://www.postgresql.org/docs/15/indexes-index-only-scans.html
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/indexes-index-only-scans.html
 </details>
+
+### Theorical Question 35
+
+Do you know what a test search is, how to use it and how to use index for optimize it ?
+
+<details><summary><b>Answer</b></summary>
+
+https://www.postgresql.org/docs/15/textsearch-intro.html
+
+https://www.postgresql.org/docs/15/textsearch-tables.html
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-index-only-scans.html
+</details>
