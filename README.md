@@ -467,3 +467,52 @@ https://www.postgresql.org/docs/15/functions-admin.html
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/functions-admin.html
 </details>
+
+### Theorical Question 31
+
+Use case of indexes
+
+<details><summary><b>Answer</b></summary>
+
+If there are many rows in test1 and only a few rows (perhaps zero or one) that would be returned by such a query, this is clearly an inefficient method. But if the system has been instructed to maintain an index on the id column, it can use a more efficient method for locating matching rows. For instance, it might only have to walk a few levels deep into a search tree.
+
+Once an index is created, no further intervention is required: the system will update the index when the table is modified, and it will use the index in queries when it thinks doing so would be more efficient than a sequential table scan. But you might have to run the ANALYZE command regularly to update statistics to allow the query planner to make educated decisions.
+
+Creating an index on a large table can take a long time. By default, PostgreSQL allows reads (SELECT statements) to occur on the table in parallel with index creation, but writes (INSERT, UPDATE, DELETE) are blocked until the index build is finished. In production environments this is often unacceptable. It is possible to allow writes to occur in parallel with index creation, but there are several caveats to be aware of — for more information see Building Indexes Concurrently.
+
+After an index is created, the system has to keep it synchronized with the table. This adds overhead to data manipulation operations. Indexes can also prevent the creation of heap-only tuples. Therefore indexes that are seldom or never used in queries should be removed.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-intro.html
+</details>
+
+
+### Theorical Question 32
+
+Use case of indexes
+
+<details><summary><b>Answer</b></summary>
+
+https://www.postgresql.org/docs/15/indexes-types.html
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-types.html
+</details>
+
+### Theorical Question 33
+
+Why you should not create indexes in a unique columns ?
+
+<details><summary><b>Answer</b></summary>
+
+There's no need to manually create indexes on unique columns; doing so would just duplicate the automatically-created index.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-unique.html
+</details>
