@@ -439,3 +439,31 @@ There is no performance difference among these three types, apart from increased
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/datatype-character.html
 </details>
+
+### Theorical Question 29
+
+Optimizing multiRange with indixes
+
+<details><summary><b>Answer</b></summary>
+
+![Image](img/multiRangeIndex.png "multiRangeIndex")
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/datatype-character.html
+</details>
+
+### Theorical Question 30
+
+Useful postgres administration function
+
+<details><summary><b>Answer</b></summary>
+
+https://www.postgresql.org/docs/15/functions-admin.html
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/functions-admin.html
+</details>
