@@ -546,3 +546,17 @@ https://www.postgresql.org/docs/15/textsearch-tables.html
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/indexes-index-only-scans.html
 </details>
+
+### Theorical Question 36
+
+How do you know that a query is been executed in parallel ?
+
+<details><summary><b>Answer</b></summary>
+
+https://www.postgresql.org/docs/current/how-parallel-query-works.html
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-index-only-scans.html
+</details>
