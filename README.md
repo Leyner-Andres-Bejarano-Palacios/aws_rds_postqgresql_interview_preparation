@@ -516,3 +516,17 @@ There's no need to manually create indexes on unique columns; doing so would jus
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/indexes-unique.html
 </details>
+
+### Theorical Question 34
+
+How can we use an index in one column to extract data from another column ?
+
+<details><summary><b>Answer</b></summary>
+
+https://www.postgresql.org/docs/15/indexes-index-only-scans.html
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://www.postgresql.org/docs/15/indexes-index-only-scans.html
+</details>
