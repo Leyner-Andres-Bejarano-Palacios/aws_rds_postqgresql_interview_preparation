@@ -560,3 +560,17 @@ https://www.postgresql.org/docs/current/how-parallel-query-works.html
 <details><summary><b>Source</b></summary>
 https://www.postgresql.org/docs/15/indexes-index-only-scans.html
 </details>
+
+### Theorical Question 37
+
+Do you know what is the AWS rds proxy ?
+
+<details><summary><b>Answer</b></summary>
+
+By using Amazon RDS Proxy, you can allow your applications to pool and share database connections to improve their ability to scale. RDS Proxy makes applications more resilient to database failures by automatically connecting to a standby DB instance while preserving application connections.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html
+</details>
